@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0fdfa" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded canvas -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Shield contour subtle outline -->
+  <path d="M256 70 C350 70, 410 100, 410 190 C410 320, 310 400, 256 440 C202 400, 102 320, 102 190 C102 100, 162 70, 256 70 Z" 
+        fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.2" stroke-width="3" />
+
+  <!-- Medical Cross with softened corners and shadow -->
+  <g filter="url(#subtleShadow)">
+    <path d="M200 130 C200 120 208 112 218 112 H294 C304 112 312 120 312 130 V198 H380 C390 198 398 206 398 216 V292 C398 302 390 310 380 310 H312 V378 C312 388 304 396 294 396 H218 C208 396 200 388 200 378 V310 H132 C122 310 114 302 114 292 V216 C114 206 122 198 132 198 H200 V130 Z" 
+          fill="url(#crossGrad)" />
+  </g>
+
+  <!-- Cyan Vital Sign / Pulse line inside the cross -->
+  <path d="M140 254 H205 L224 205 L252 305 L276 230 L292 270 L304 254 H372" 
+        stroke="#0284c7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Central healing circle core -->
+  <circle cx="256" cy="254" r="6" fill="#0f766e" />
+</svg>

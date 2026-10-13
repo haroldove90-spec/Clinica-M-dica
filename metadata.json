@@ -1,0 +1,6 @@
+{
+  "name": "Clinica Médica Dashboard",
+  "description": "Sistema de gestión hospitalaria y clínica integral con acceso multi-rol, control COFEPRIS, expediente clínico NOM-004, bloque quirúrgico, farmacia interna y enfermería.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
